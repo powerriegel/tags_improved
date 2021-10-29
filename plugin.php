@@ -45,25 +45,33 @@ class pluginTagsPlus extends Plugin {
 
 		// By default the database of tags are alphanumeric sorted
 		foreach( $tags->db as $key=>$fields ) {
-		    $size = "inherit"
-			if (count($fields['list']) <= 1) {
-				$size = "inherit";
-			} else if(count($fields['list']) > 1 && count($fields['list']) <= 4) {
-				$size = "large";
+		    $fontSize = "";
+		    $fontWeight = "400";
+		    if (count($fields['list']) <= 1) {
+                $size = "";
+            } else if(count($fields['list']) > 1 && count($fields['list']) <= 4) {
+				$fontSize = "large";
+				$fontWeight = "600";
 			} else if(count($fields['list']) > 4 && count($fields['list']) <= 8) {
-				$size = "larger";
+				$fontSize = "larger";
+				$fontWeight = "700";
 			} else if(count($fields['list'])> 8 && count($fields['list']) <= 13) {
-				$size = "x-large";
+				$fontSize = "x-large";
+				$fontWeight = "700";
 			} else {
-                $size = "xx-large";
+                $fontSize = "xx-large";
+				$fontWeight = "700";
 			}
 
-            $html .= '<li style="font-size: ' . $size . '">';
+            if($fontSize == "") {
+                $html .= '<li>';
+            } else {
+                $html .= '<li style="font-size: ' . $fontSize . '; font-weight: ' . $fontWeight . '">';
+            }
             $html .= '<a href="'.DOMAIN_TAGS.$key.'">';
             $html .= $fields['name'];
             $html .= '</a>';
             $html .= '</li>';
-
 		}
 
 		$html .= '</ul>';
