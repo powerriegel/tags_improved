@@ -1,0 +1,39 @@
+.plugin ul {
+	list-style: none;
+	padding: 0 0 0 20px;
+}
+ul.tags {
+	list-style:none;
+	padding-left:0;
+	margin:0 0 3rem 0;
+}
+ul.tags li {
+	display:inline-block;
+	margin: 10px 0 0 2px;
+}
+ul.tags li a {
+	background:rgba(0,0,0,.05);
+	color:rgba(0,0,0,.6);
+	border-radius:3px;
+	padding:5px 10px;
+}
+ul.tags li a:hover {
+	background:rgba(0,0,0,.07);
+	text-decoration:none;
+}
+
+ul.tags li.xsmall {
+    font-size: 0.7em;
+}
+ul.tags li.small {
+    font-size: 0.85em;
+}
+ul.tags li.medium {
+    font-size: 1em;
+}
+ul.tags li.large {
+    font-size: 1.1em;
+}
+ul.tags li.xlarge {
+    font-size: 1.2em;
+}
