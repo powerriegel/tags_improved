@@ -53,13 +53,13 @@ class pluginTagsPlus extends Plugin {
 			$current = count($fields['list']);
 			$class = 'xsmall';
 
-		    if ($current < 1) ) {
+		    if ($current <= 1 ) {
 				$class = 'xsmall';
-            } else if($current) > 1 && count($current) <= 3) {
+            } else if($current > 1 && $current <= 3) {
 				$small = 'small';
-			} else if(count($current) > 3 && $current <= 6) {
+			} else if($current > 3 && $current <= 6) {
 				$class = 'medium';
-			} else if($current > 6 && count($fields['list']) <= 12) {
+			} else if($current > 6 && $current <= 12) {
 				$class = 'large';
 			} else {
 				$class = "xlarge";
