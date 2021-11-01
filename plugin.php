@@ -50,7 +50,7 @@ class pluginTagsPlus extends Plugin {
 
 		foreach( $tags->db as $key => $fields ) {
 
-			$current = count$fields['list']);
+			$current = count($fields['list']);
 			$class = 'xsmall';
 
 		    if ($current < 1) ) {
