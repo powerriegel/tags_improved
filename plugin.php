@@ -48,7 +48,7 @@ class pluginTagsPlus extends Plugin {
 		$html .= '<div class="plugin-content">';
 		$html .= '<ul class="tags">';
 
-		foreach( $tags->db as $ke y=> $fields ) {
+		foreach( $tags->db as $key => $fields ) {
 
 			$current = count$fields['list']);
 			$class = 'xsmall';
