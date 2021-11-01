@@ -32,8 +32,10 @@ ul.tags li.medium {
     font-size: 1em;
 }
 ul.tags li.large {
-    font-size: 1.1em;
+    font-size: 1.15em;
+    font-weight: bold;
 }
 ul.tags li.xlarge {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: bold;
 }

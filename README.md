@@ -1,10 +1,9 @@
 # Improved Tag Cloud
 
-[![Gitter](https://badges.gitter.im/paulscode-de/community.svg)](https://gitter.im/paulscode-de/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-Diese Bludit CMS Plugin erweitert die bestehene TAG List um einen font-size Faktor der ansteigt, wenn der Tag oefter
+Dieses Bludit CMS Plugin erweitert die bestehene Tag List um einen font-size Faktor der ansteigt, wenn der Tag öfter
 vorkommt.
 
-Durch CSS kann die Tag Cloud dann angepasst werden. Beispiel auf [blog.f1nalboss.de](https://blog.f1nalboss.de).  
-Das passende Design gibt es hier: 
-https://github.com/paulscode-de/bludit-paulish
+Durch CSS kann die Tag Cloud dann angepasst werden. Beispiel auf [www.cornis-techblog.de](https://www.cornis-techblog.de).  
+
+Im Gegensatz zur Originalversion von [paulscode-de/bludit-tags_improved](https://github.com/paulscode-de/bludit-tags_improved)
+ist hier das gesamte Styling enthalten und alle Tags werden korrekt escapt sodass kein XSS möglich ist. 
