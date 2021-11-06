@@ -65,7 +65,7 @@ class pluginTagsPlus extends Plugin {
 				$class = "xlarge";
 			}
 
-            $html .= '<li class="'.htmlentities($class).'">';
+            $html .= '<li class="'.htmlentities($current).' '.htmlentities($class).'">';
             $html .= '<a href="'.DOMAIN_TAGS.htmlentities($key).'">';
             $html .= htmlentities($fields['name']);
             $html .= '</a>';
